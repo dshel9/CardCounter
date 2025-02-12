@@ -1184,7 +1184,9 @@ def showAreasOfInterest():
     r4[0] = math.ceil(r4[0])
     r4[1] = math.ceil(r4[1])
     
-
+    w1 = 30
+    h1 = 100
+    
     while True:
         img = sct.grab(window)
         img = np.array(img)
@@ -1201,6 +1203,10 @@ def showAreasOfInterest():
         cv.line(imgCopy, r2, r3, (255,0,0), 2)
         cv.line(imgCopy, r3, r4, (255,0,0), 2)
         cv.line(imgCopy, r4, r1, (255,0,0), 2)
+
+        cv.rectangle(imgCopy, (545, 805), (545 + w1, 805 + h1), (0,0,255), 2)
+        cv.rectangle(imgCopy, (725, 805), (725 + w1, 805 + h1), (0,0,255), 2)
+        cv.rectangle(imgCopy, (905, 805), (905 + w1, 805 + h1), (0,0,255), 2)
 
 
         cv.imshow("Focused", imgCopy)
