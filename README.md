@@ -8,13 +8,21 @@ To run, first navigate to [Trickster Cards](https://www.trickstercards.com/home/
 ```
 python3 LineUpScreen.py
 ```
-<img width="735" alt="LineUpScreenNoCardsPlayed" src="https://github.com/user-attachments/assets/dcae8601-d9a0-4300-bdc7-8bc887ea3560" />
+<img width="852" alt="LineUpScreenNoCards" src="https://github.com/user-attachments/assets/81dab4e4-5aef-4c22-a66d-7cf04eabf8f9" />
 
 
-This will display the window that's being captured with 4 blue rectangles, showing the areas that will be monitered for played cards. 
-<img width="446" alt="LineUpScreenCardsPlayed" src="https://github.com/user-attachments/assets/3568cf4f-0f46-4257-9dcf-33d9f9862613" />
 
-Play a few tricks and adjust your browser so the cards line up as in the photo. Keep in mind the cards aren't played in the same places everytime.
+This will display the window that's being captured with 4 blue rectangles and 3 red rectangles, showing the areas that will be monitered for played cards and the scoreboard. 
+<img width="808" alt="LineUpScreen4Cards1" src="https://github.com/user-attachments/assets/006bafa6-e3d3-418f-814e-fce75eb63ed1" />
+<img width="808" alt="LineUpScreen4Cards2" src="https://github.com/user-attachments/assets/5376bd13-5fa1-4b54-b4a7-9bd92a2d4048" />
+
+Play a few tricks and adjust your browser so the cards line up with the blue rectangles as in the photos. Keep in mind the cards aren't played in the same places everytime.
+
+<img width="808" alt="LineUpScreenScoreboard" src="https://github.com/user-attachments/assets/215558b2-cdf3-4728-8ca4-43bc23071b4d" />
+
+Once the hand is over, the scoreboard will appear. The red rectangles should align similar to the photo, with in between the colomns. 
+
+
 
 Once you're satisfied with how the cards line up click on the window showing the rectangles and press q to quit the program. Now it's time to run the main program. 
 ```
