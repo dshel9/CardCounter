@@ -37,4 +37,41 @@ Here is an example board near the end of a hand. There are only 8 cards that hav
 
 To finish running the main program, click on the board and press the space bar. 
 
-Please do not have any other tabs open when running the program as this will affect the where the cards and scoreboard appear. 
+## File Breakdown
+LabeledSuits/trainingDataX.npy - contains the training images as (35,25) 2D arrays. Scaled 0-1
+
+LabeledSuits/trainingDataY.npy - contains the suit classifications as one hot arrays for all the images in LabeledSuits/trainingDataX.npy
+
+LabeledNumbers/TrainindDataY.npy - contains the number classifications as one hot arrays for all the images in LabeledSuits/trainingDataX.npy
+
+PredictedNumbers/X.npy - contains images the number model was run on after initial training
+
+PredictedNumbers/X.npy - contains the predictions of the number model
+
+PredictedSuits/Imgs.npy - contains images the suits model was run on after initial training
+
+PredictedSuits/predictions.npy - contains the predictions of the suits model
+
+TestIMG/TestImage1.png - screenshot of the window when all four cards were played, used to find the correct areas to give to the model
+
+TestIMG/TestImage2.png, TestIMG/TestImage3.png, TestIMG/TestImage4.png, TestIMG/TestImage5.png - screenshots of the scoreboard of a euchre game, used to learn how the scoreboard changes after multiple rounds of play
+
+TestIMG/TestImage6.png - screenshot of the scoreboard of a hearts game, used to find the correct areas to moniter to find if the scoreboard is showing
+
+Game.py - class for counting the cards 
+
+Helper.py - file containing various functions used during developement
+
+ImageModifier.py - class for taking the screenshot and returning 4 numpy arrays, one of each region of interest for each card
+
+find_region.py - file containing functions used to find the regions of the cards that contain the suit and number
+
+main.py - runs the card counting program
+
+LineUpScreen.py - runs the program to show you the window being captured and the regions the program is looking at for detecting cards and the scoreboard
+
+model.py - creates the machine learning model for classifying suits and numbers 
+
+numberClassifierV2.keras - keras model to classify the number of a card, input shape (35,25,1)
+
+suitClassifierv2.keras - keras model to classify the suit of a card, input shape (35,25,1)
